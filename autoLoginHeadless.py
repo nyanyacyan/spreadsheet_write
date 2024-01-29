@@ -31,6 +31,7 @@ import time
 
 # モジュール
 from debugLogger import Logger
+from solveRecaptcha import SolverRecaptcha
 from chatworkNotify import ChatworkNotify
 
 
@@ -55,13 +56,13 @@ class AutoLogin:
         self.recaptcha_solver = SolverRecaptcha(self.chrome)
 
         # LineNotifyクラスを初期化
-        self.line_notify = LineNotify()
+        # self.line_notify = LineNotify()
 
         # ChatworkNotifyクラスを初期化
         self.chatwork_notify = ChatworkNotify()
 
         # SlackNotifyクラスを初期化
-        self.slack_notify = SlackNotify()
+        # self.slack_notify = SlackNotify()
 
 
     def login(self, login_url, userid, password, userid_xpath, password_xpath, login_button_xpath, cart_element_xpath):
