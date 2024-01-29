@@ -8,9 +8,6 @@
 
 #---バージョン---
 # Python==3.8.10
-# selenium==4.1
-# headlessモード
-# Chromedriver==ChromeDriverManager
 
 
 #---流れ--

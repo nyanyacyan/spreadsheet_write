@@ -20,7 +20,7 @@ import os
 from selenium.common.exceptions import NoSuchElementException
 from debugLogger import Logger
 from twocaptcha import TwoCaptcha
-from lineNotify import LineNotify
+# from lineNotify import LineNotify
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -35,7 +35,7 @@ class SolverRecaptcha:
 
 
         load_dotenv()
-        self.line_notify = LineNotify()
+        # self.line_notify = LineNotify()
         self.chrome = chrome_driver
 
         # 2captcha APIkeyを.envから取得
