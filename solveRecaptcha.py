@@ -20,7 +20,6 @@ import os
 from selenium.common.exceptions import NoSuchElementException
 from debugLogger import Logger
 from twocaptcha import TwoCaptcha
-# from lineNotify import LineNotify
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -34,7 +33,6 @@ class SolverRecaptcha:
         self.debug_mode = debug_mode
 
 
-        load_dotenv()
         # self.line_notify = LineNotify()
         self.chrome = chrome_driver
 

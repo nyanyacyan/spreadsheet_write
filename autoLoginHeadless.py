@@ -8,6 +8,8 @@
 
 #---バージョン---
 # Python==3.8.10
+# requests==2.31.0
+# selenium==4.1.0
 
 #---流れ--
 # ID入力=> パス入力=> クリック
@@ -25,7 +27,7 @@ from dotenv import load_dotenv
 import os
 import time
 
-# モジュール
+# 自作モジュール
 from debugLogger import Logger
 from solveRecaptcha import SolverRecaptcha
 from chatworkNotify import ChatworkNotify
