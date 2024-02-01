@@ -14,7 +14,6 @@ import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 from dotenv import load_dotenv
 import os
-import datetime
 
 from debugLogger import Logger
 
@@ -55,11 +54,6 @@ class Spreadsheet_read:
         self.logger.debug(mixdata)
 
         return mixdata
-
-        # 検索ワードに変換
-        for jan, name in mixdata.items():
-            sarch_word = (f"{jan} {name}")
-            self.logger.debug(sarch_word)
 
 
 
